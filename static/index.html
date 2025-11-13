@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolt AI - Gerador de Roteiros e Áudios em Lote</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>⚡ Bolt AI</h1>
+            <p>Gerador de Roteiros e Áudios para Vídeos - Processamento em Lote</p>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Info Box -->
+            <div class="info-box">
+                <div class="info-box-title">🌍 Adaptação Cultural Autêntica</div>
+                <div class="info-box-text">
+                    Cada idioma recebe um roteiro 100% ORIGINAL com nuances culturais específicas, 
+                    nomes típicos da cultura e expressões locais autênticas. Não fazemos tradução - 
+                    criamos conteúdo único para cada idioma!
+                </div>
+            </div>
+
+            <!-- Seção de Input -->
+            <div class="section">
+                <h2 class="section-title">📝 Títulos para Processar</h2>
+                <div class="input-group">
+                    <label for="titlesInput">Digite os títulos (um por linha):</label>
+                    <textarea 
+                        id="titlesInput" 
+                        rows="8" 
+                        placeholder="Como fazer um bolo de chocolate&#10;Dicas para economizar dinheiro&#10;Benefícios da meditação&#10;Tutorial de programação Python&#10;Receita de pizza caseira"
+                    ></textarea>
+                </div>
+            </div>
+
+            <!-- Seção de Seleção de Idiomas -->
+            <div class="section">
+                <h2 class="section-title">🌐 Selecione os Idiomas</h2>
+                <div class="language-selector" id="languageSelector">
+                    <!-- Idiomas serão renderizados aqui pelo JavaScript -->
+                </div>
+            </div>
+
+            <!-- Botão de Gerar -->
+            <button id="generateBtn" class="btn btn-primary">
+                🚀 Gerar Conteúdo em Lote
+            </button>
+
+            <!-- Barra de Progresso -->
+            <div id="progressBar" class="progress-bar">
+                <div class="progress-text" id="progressText">
+                    Processando: 0/0 concluídos
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <!-- Resultados -->
+            <div id="resultsContainer" class="results" style="display: none;">
+                <h2 class="section-title">📊 Resultados</h2>
+                <div class="results-grid" id="resultsGrid">
+                    <!-- Resultados serão renderizados aqui pelo JavaScript -->
+                </div>
+            </div>
+
+            <!-- Estado Vazio (quando não há resultados) -->
+            <div id="emptyState" class="empty-state">
+                <div class="empty-state-icon">📝</div>
+                <div class="empty-state-text">
+                    Insira títulos e selecione idiomas para começar
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
